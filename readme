@@ -1,0 +1,40 @@
+Functions and processes to combine and transpose water analysis reports from the QLD Govt. Department of Environment and Science - Chemistry Centre in R. 
+
+Contributors:   Micheline Campbell, Developer
+                Stephen Donaldson, Beta testing
+                Alastair King, Beta testing
+                Bron Bosomworth, test data
+                Amanda Elledge, test data
+
+For easiest use, run in Rstudio. 
+
+You are welcome to share, adapt, and improve this content. I'd love to hear what you change, you can email me at the address below!
+
+I have tried to make this easy to follow for non R-users, apologies for the occasionally oversimplistic language. 
+
+I can't guarantee this will work on YOUR data - exercise due caution and QA/QC as req'd. 
+
+DO NOT TOUCH THE 'FUNCTIONS.R' FILE
+  Unless something isn't working and you're trying to fix it!
+  You can email me at michelineleecampbell@gmail.com if you get really hard up and need a hand.
+  
+Inputs:
+  Water Analysis Report as .csv (see steps below) (see Step  below1)
+
+Outputs:
+  Separate transposed and tidied reports as .csv (see Step 3 below)
+  Combined transposed and tidied reports as .csv (see Step 4 below)
+  
+Packages: (see Packages.R to install packages)
+  tidyverse
+  janitor
+
+Process:
+1.  In the 'Water' tab of your lab report, save as .csv to the 'data' folder in this Rproject, to save only the active sheet click OK. PLEASE DON'T DELETE ANY COLUMNS OR ROWS FROM YOUR CSV
+2.  Open 'report_processing.Rproj' in Rstudio (double click in windows explorer)
+3.  For each lab report, run the tidyreports() function defined in Functions.R
+    * See Transpose_reports.R for code and examples
+4. Combine transposed reports and save as .csv
+    * See Combine_reports.R for code and examples
+  
+    
